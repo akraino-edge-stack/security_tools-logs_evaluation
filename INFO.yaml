@@ -1,0 +1,39 @@
+---
+project: 'security'
+project_creation_date: '2021-05-13'
+project_category: ''
+lifecycle_state: 'Incubation'
+project_lead: &akraino_security_ptl
+    name: 'Randy Stricklin'
+    email: 'rs7776@att.com'
+    id: 'rs7776'
+    company: 'AT&T'
+    timezone: 'Unknown/Unknown'
+primary_contact: *akraino_security_ptl
+issue_tracking:
+    type: 'jira'
+    url: 'https://jira.akraino.org/projects/'
+    key: 'SEC'
+mailing_list:
+    type: 'groups.io'
+    url: 'technical-discuss@lists.akraino.org'
+    tag: '[]'
+realtime_discussion:
+    type: 'irc'
+    server: 'freenode.net'
+    channel: '#akraino'
+meetings:
+    - type: 'gotomeeting+irc'
+      agenda: 'https://wiki.akraino.org/display/'
+      url: ''
+      server: 'freenode.net'
+      channel: '#akraino'
+      repeats: ''
+      time: ''
+repositories:
+    - security
+committers:
+    - <<: *akraino_security_ptl
+tsc:
+    # yamllint disable rule:line-length
+    approval: 'https://wiki.akraino.org/display/AK/TSC+2021-05-06+Thursday+7+am+Pacific#TSC20210506Thursday7amPacific-Votes(templatebelow)'

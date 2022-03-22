@@ -1,0 +1,352 @@
+{
+    "lynis":{
+        "incubation":[
+            "Test: Checking PASS_MAX_DAYS option in /etc/login.defs", 
+            "Performing test ID AUTH-9328 (Default umask values)", 
+            "Performing test ID SSH-7440 (Check OpenSSH option: AllowUsers and AllowGroups)", 
+            "Test: checking for file /etc/network/if-up.d/ntpdate", 
+            "Result: sysctl key fs.suid_dumpable", 
+            "Result: sysctl key kernel.dmesg_restrict", 
+            "Result: sysctl key net.ipv4.conf.default.accept_source_route", 
+            "Performing test ID HRDN-7220 (Check if one or more compilers are installed)"
+        ],
+        "maturity":[
+            "Performing test ID BOOT-5122 (Check for GRUB boot password)",
+            "Performing test ID BOOT-5184 (Check permissions for boot files/scripts)", 
+            "Test: Checking presence /var/run/reboot-required.pkgs", 
+            "Performing test ID AUTH-9228 (Check password file consistency with pwck)", 
+            "Performing test ID AUTH-9229 (Check password hashing methods)", 
+            "Test: Checking SHA_CRYPT_MIN_ROUNDS option in /etc/login.defs", 
+            "Test: Checking PASS_MAX_DAYS option in /etc/login.defs", 
+            "Test: collecting accounts which have an expired password (last day changed + maximum change time)", 
+            "Performing test ID AUTH-9328 (Default umask values)", 
+            "Performing test ID FILE-6368 (Checking ACL support on root file system)", 
+            "Performing test ID USB-2000 (Check USB authorizations)", 
+            "Performing test ID USB-3000 (Check for presence of USBGuard)", 
+            "Performing test ID PKGS-7370 (Checking for debsums utility)", 
+            "Performing test ID PKGS-7388 (Check security repository in apt sources.list file)", 
+            "Performing test ID SSH-7408 (Check SSH specific defined options)", 
+            "Test: Checking AllowTcpForwarding in /tmp/lynis.", 
+            "Test: Checking ClientAliveCountMax in /tmp/lynis.", 
+            "Test: Checking ClientAliveInterval in /tmp/lynis.", 
+            "Test: Checking FingerprintHash in /tmp/lynis.", 
+            "Test: Checking IgnoreRhosts in /tmp/lynis.", 
+            "Test: Checking MaxAuthTries in /tmp/lynis.", 
+            "Test: Checking MaxSessions in /tmp/lynis.", 
+            "Test: Checking Port in /tmp/lynis.", 
+            "Test: Checking StrictModes in /tmp/lynis.", 
+            "Test: Checking TCPKeepAlive in /tmp/lynis.", 
+            "Performing test ID SSH-7440 (Check OpenSSH option: AllowUsers and AllowGroups)", 
+            "Test: checking for file /etc/network/if-up.d/ntpdate", 
+            "Performing test ID KRNL-6000 (Check sysctl key pairs in scan profile)", 
+            "Test: Check if one or more compilers can be found on the system"],
+        "core":[
+        ]
+    
+    },
+    "vuls": {
+        "ubuntu2004": {
+            "CVE-2016-1585": ["Medium", "No"], 
+            "CVE-2017-8283": ["Negligible", "No"], 
+            "CVE-2018-20839": ["Medium", "No"], 
+            "CVE-2019-19814": ["Low", "No"], 
+            "CVE-2019-18604": ["Low", "No"], 
+            "CVE-2020-14343": ["Medium", "No"], 
+            "CVE-2020-27619": ["Low", "Specify version of Python being used. Python 3.8 has a patch, other don't or not vulnerable on Ubuntu 20.04"], 
+            "CVE-2021-3177": ["Medium", "Specify version of Python being used. Python 3.8 has a patch, other don't or not vulnerable on Ubuntu 20.04"], 
+            "CVE-2016-9180": ["Low", "No"]}, 
+        "ubuntu1604": {
+            "CVE-2013-1910": ["Medium", "No"], 
+            "CVE-2016-1585": ["Medium", "No"], 
+            "CVE-2016-5407": ["Low", "No"], 
+            "CVE-2016-7944": ["Low", "No"], 
+            "CVE-2016-7947": ["Low", "No"], 
+            "CVE-2016-7948": ["Low", "No"], 
+            "CVE-2016-7949": ["Low", "No"], 
+            "CVE-2016-7950": ["Low", "No"], 
+            "CVE-2016-7951": ["Low", "No"], 
+            "CVE-2016-8735": ["Low", "Released (6.0.45+dfsg-1ubuntu0.1) Explanation: We are using same version of integrated OS package as mentioned as released by ubuntu for Package dfsg. But still issue thrown. It is not an issue from our side. This issue is with Vuls or Ubuntu."], 
+            "CVE-2017-10684": ["Low", "No"], 
+            "CVE-2017-10685": ["Low", "No"], 
+            "CVE-2017-12424": ["Low", "No"], 
+            "CVE-2017-12562": ["Low", "No"], 
+            "CVE-2017-15088": ["Negligible", "No"], 
+            "CVE-2017-18342": ["Low", "No"], 
+            "CVE-2017-7614": ["Low", "No"], 
+            "CVE-2017-8283": ["Negligible", "No"], 
+            "CVE-2018-12699": ["Low", "No"], 
+            "CVE-2018-20839": ["Medium", "No"], 
+            "CVE-2019-17041": ["Low", "No"], 
+            "CVE-2019-17042": ["Low", "No"], 
+            "CVE-2019-17571": ["Medium", "No"], 
+            "CVE-2020-10683": ["Medium", "Released (1.6.1+dfsg.3-2ubuntu1.1) Explanation: This is OS integrated package andwe are using1.6.1+dfsg.3-2ubuntu1 same updated latest release version. This is an issue with Vuls / Ubuntu not from our side."], 
+            "CVE-2020-1938": ["Low", "No"], 
+            "CVE-2019-19814": ["Low", "No"], 
+            "CVE-2019-19816": ["Low", "Package: linux For ubuntu 16.04, status is Needed. Package not available for ubuntu 16.04"], 
+            "CVE-2016-9584": ["Low", "Package: libical For Ubuntu 16.04, status is Needed for Libical Package. Package not available for ubuntu 16.04"], 
+            "CVE-2017-5209": ["Negligible", "No"], 
+            "CVE-2017-5545": ["Negligible", "No"], 
+            "CVE-2017-6969": ["Low", "No"], 
+            "CVE-2017-7226": ["Low", "No"], 
+            "CVE-2017-8872": ["Low", "No"], 
+            "CVE-2019-13224": ["Medium", "No"], 
+            "CVE-2019-19012": ["Medium", "No"]}, 
+        "centos78": {
+            "CVE-2019-15505": ["Moderate 8.0", "No"], 
+            "CVE-2014-9939": ["Low 1.2", "No"], 
+            "CVE-2018-16428": ["Low 5.1", "No There is no proper documents from CENTOS for unfixed vulnerabilities. We cannot compare/refer RHEL 7 docs with CENTOS 7.8 since, RHEL is completely different OS"], 
+            "CVE-2019-11068": ["Moderate 6.8", "Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020"], 
+            "CVE-2019-12450": ["Moderate 6.6", "Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020"], 
+            "CVE-2019-12900": ["LOW 4.0", "No"], 
+            "CVE-2019-9169": ["Moderate 6.5", "No (Will not fix) There is no proper documents from CENTOS for unfixed vulnerabilities.We cannot compare/refer RHEL 7 docs with CENTOS 7.8 since, RHEL is completely different OS"], 
+            "CVE-2018-20836": ["Moderate 7.0", "Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020"], 
+            "CVE-2019-2201": ["Moderate 7.8", "No (Will not fix) There is no proper documents from CENTOS for unfixed vulnerabilities.We cannot compare/refer RHEL 7 docs with CENTOS 7.8 since, RHEL is completely different OS"], 
+            "CVE-2019-8506": ["Moderate 6.3", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8535": ["Moderate 6.3", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8536": ["Moderate 6.3", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8544": ["Moderate 6.3", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8669": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8672": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8676": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8684": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8688": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8689": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8814": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8815": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-8816": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2020-3868": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2020-3895": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2020-3897": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2020-3899": ["Moderate 8.8", "webkitgtk4 - Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020 webkitgtk3 - Will not fix"], 
+            "CVE-2019-17006": ["Moderate 8.1", "Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020"],         
+            "CVE-2019-5482": ["Moderate 6.3", "Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020"], 
+            "CVE-2017-12652": ["Low 3.7", "Fixed in RHEL 7 But not in CentOS 7.8 as of 9/29/2020"]}, 
+        "ubuntu1804": {
+            "CVE-2018-18439": ["Negligible", "Not vulnerable (2019.07+dfsg-1ubuntu4~18.04.1)"], 
+            "CVE-2020-8432": ["Low", "No"], 
+            "CVE-2016-1585": ["Medium", "No"], 
+            "CVE-2017-18342": ["Low", "No"], 
+            "CVE-2017-8283": ["Negligible", "No"], 
+            "CVE-2018-11236": ["Medium", "glibc: Fix 2.27-3ubuntu1.2 Explanation: We are using same version of integrated OS package updated as mentioned as released by ubuntu for Package glibc. But still issue thrown. It is not an issue from our side. This issue is with Vuls or Ubuntu."], 
+            "CVE-2018-20839": ["Medium", "No"], 
+            "CVE-2019-11059": ["Low", "18.04 LTS: Not Vulnerable 2019.07+dfsg-1ubuntu4~18.04.1"], 
+            "CVE-2019-14192": ["Low", "No"], 
+            "CVE-2019-14193": ["Low", "No"], 
+            "CVE-2019-14194": ["Low", "No"], 
+            "CVE-2019-14195": ["Low", "No"], 
+            "CVE-2019-14196": ["Low", "No"], 
+            "CVE-2019-14198": ["Low", "No"], 
+            "CVE-2019-14199": ["Low", "No"], 
+            "CVE-2019-14200": ["Low", "No"], 
+            "CVE-2019-14201": ["Low", "No"], 
+            "CVE-2019-14202": ["Low", "No"], 
+            "CVE-2019-14203": ["Low", "No"], 
+            "CVE-2019-14204": ["Low", "No"], 
+            "CVE-2019-9169": ["Low", "No"], 
+            "CVE-2019-10220": ["Medium", "Linux Minimum 4.15.0-88.88 Explanation: We are using the latest patch of linux kernel. Since we are using updated patch. Still issues thrown. This is an issue from Vuls / Ubuntu not from our side Screenshot: 4.15.0-118-generic installed"], 
+            "CVE-2019-19814": ["Low", "No"], 
+            "CVE-2019-19816": ["Low", "Linux 4.15.0-88.88 minimum required Explanation: We are using the latest patch of linux kernel. Eventhough we are using updated patch, Still issues thrown. This is an issue from Vuls / Ubuntu not from our side 4.15.0-118-generic installed"], 
+            "CVE-2019-14197": ["Low", "No"], 
+            "CVE-2019-17041": ["Low", "No"], 
+            "CVE-2019-17042": ["Low", "No"], 
+            "CVE-2016-9085": ["Low", "No"], 
+            "CVE-2017-18201": ["Medium", "No"], 
+            "CVE-2017-9525": ["Low", "No"], 
+            "CVE-2019-10160": ["Low", "No"], 
+            "CVE-2019-18276": ["Low", "No"], 
+            "CVE-2020-27619": ["Low", "No"], 
+            "CVE-2021-3177": ["Low", "No"], 
+            "CVE-2016-9180": ["Low", "No"], 
+            "CVE-2019-13103": ["Low", "No"], 
+            "CVE-2019-9948": ["Low", "No"]}, 
+        "centos82": {
+            "CVE-2019-2201": ["Moderate 7.8", "No"], 
+            "CVE-2019-12900": ["Low", "No; will not fix"], 
+            "CVE-2019-18218": ["Moderate 9.8", "No"], 
+            "CVE-2018-16428": ["Low 5.1", "No"], 
+            "CVE-2019-14889": ["Low", "Package: libssh2 not affected Package: libssh fixed 11/3/2020 in RHSA-2020:4545"], 
+            "CVE-2018-10103": ["Moderate", "Package: tcpdump Description: RHSA-2020:4760 Fixed Date: 11/3/20"], 
+            "CVE-2018-10105": ["Moderate", "Package: tcpdump Description: RHSA-2020:4760 Fixed Date: 11/3/20"], 
+            "CVE-2018-19325": ["Low", "Per https://nvd.nist.gov/vuln/detail/CVE-2018-19325 this CVE is a duplicate of CVE-2018-14466, this later CVE should be the only one referenced moving forward. Package: tcpdump Description: RHSA-2020:4760 Fixed Date: 11/3/20"], 
+            "CVE-2019-16746": ["Moderate", "No; will not fix"], 
+            "CVE-2019-17544": ["Low", "No; will not fix"]}, 
+        "centos79": {
+            "CVE-2019-17006": ["Moderate 8.1", "It is cause by nss before 3.46, but the version is already 3.53.1. But still issue thrown. It isnot an issue from our side.Thisissue is with Vuls or CentOS."], 
+	    "CVE-2019-12900": ["Low 4.0", "No; will not fix"]},
+        "centos76": {
+            "CVE-2017-12652": ["Low 3.7", "No"], 
+            "CVE-2019-5482": ["Moderate 6.3", "No"]},
+	"centos74": {
+	},
+	"centos80": {
+	}},
+    "kube-hunter":{
+        "incubation":{
+            "KHV002": [
+                "KHV002 - Kubernetes version disclosure",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV003": [
+                "KHV003 - Azure Metadata Exposure"
+            ],
+            "KHV004": [
+                "KHV004 - Azure SPN Exposure"
+            ],
+            "KHV005": [
+                "KHV005 - Access to Kubernetes API"
+            ],
+            "KHV006": [
+                "KHV006 - Insecure (HTTP) access to Kubernetes API",
+                "Ensure your setup is exposing kube-api only on an HTTPS port.",
+                "Do not enable kube-apis --insecure-port flag in production."
+            ],
+            "KHV007": [
+                "KHV007 - Specific Access to Kubernetes API",
+                "Review the RBAC permissions to Kubernetes API server for the anonymous and default service account.",
+                "Depending on the Kubernetes cluster setup and preferences this may not be a problem."
+            ],
+            "KHV020": [
+                "KHV020 - Possible Arp Spoof",
+                "Consider dropping the NET_RAW capability from your pods using Pod.spec.securityContext.capabilities"
+            ],
+            "KHV021": [
+                "KHV021 - Certificate Includes Email Address",
+                "Do not include email address in the Kubernetes API server certificate. (You should continue to use certificates to secure the API Server!)"
+            ],
+            "KHV022": [
+                "KHV022 - Critical Privilege Escalation CVE",
+                "Kubernetes v1.0.x-1.9.xno fix available",
+                "Kubernetes v1.10.0-1.10.10fixed inv1.10.11",
+                "Kubernetes v1.11.0-1.11.4fixed inv1.11.5",
+                "Kubernetes v1.12.0-1.12.2fixed inv1.12.3"
+            ],
+            "KHV023": [
+                "KHV023 - Denial of Service to Kubernetes API Server",
+                "Upgrade your kube-apiserver to newer versions, namely v1.11.8, v1.12.6, or v1.13.4",
+                "If you cannot upgrade, or until you do, the best course of action is to remove patch permissions from untrusted users, or generally from admins who dont really use it."
+            ],
+            "KHV024": [
+                "KHV024 - Possible Ping Flood Attack",
+                "Disable HTTP/2 support OR obtain a software patch if available",
+                "Disable HTTP/2 support OR obtain a software patch if available"
+            ],
+            "KHV026": [
+                "KHV026 - Arbitrary Access To Cluster Scoped Resources",
+                "Vulnerable versions: Fixed versions:",
+                "Kubernetes 1.7.x-1.12.x Fixed in v1.13.9 by #80852",
+                "Kubernetes 1.13.0-1.13.8 Fixed in v1.14.5 by #80851",
+                "Kubernetes 1.14.0-1.14.4 Fixed in v1.15.2 by #80850",
+                "Kubernetes 1.15.0-1.15.1 Fixed in master by #80750"
+            ],
+            "KHV027": [
+                "KHV027 - Kubectl Vulnerable To CVE-2019-11246",
+                "Update your kubectl client to one of the following versions: 1.12.9, 1.13.6, 1.14.2"
+            ],
+            "KHV028": [
+                "KHV028 - Kubectl Vulnerable To CVE-2019-1002101",
+                "The issue is resolved in kubectl v1.11.9, v1.12.7, v1.13.5, and v1.14.0."
+            ],
+            "KHV029": [
+                "KHV029 - Dashboard Exposed",
+                "Do not leave the Dashboard insecured."
+            ],
+            "KHV030": [
+                "KHV030 - Possible DNS Spoof",
+                "Consider using DNS over TLS. CoreDNS (the common DNS server for Kubernetes) supports this out of the box, but your client applications might not."   
+            ],
+            "KHV031": [
+                "KHV031 - Etcd Remote Write Access Event",
+                "Ensure your etcd is accepting connections only from the Kubernetes API, using the --trusted-ca-file etcd flag. This is usually done by the installer, or cloud platform."
+            ],
+            "KHV032": [
+                "KHV032 - Etcd Remote Read Access Event",
+                "Ensure your etcd is accepting connections only from the Kubernetes API, using the --trusted-ca-file etcd flag. This is usually done by the installer, or cloud platform."
+            ],
+            "KHV033": [
+                "KHV033 - Etcd Remote version disclosure"
+            ],
+            "KHV034": [
+                "KHV034 - Etcd is accessible using insecure connection (HTTP)",
+                "Ensure your setup is exposing etcd only on an HTTPS port by using the etcd flags --key-file and --cert-file."
+            ],
+            "KHV036": [
+                "KHV036 - Anonymous Authentication",
+                "Ensure kubelet is protected using --anonymous-auth=false kubelet flag. Allow only legitimate users using --client-ca-file or --authentication-token-webhook kubelet flags. This is usually done by the installer or cloud provider."
+            ],
+            "KHV037": [
+                "KHV037 - Exposed Container Logs",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV038": [
+                "KHV038 - Exposed Running Pods",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV039": [
+                "KHV039 - Exposed Exec On Container",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV040": [
+                "KHV040 - Exposed Run Inside Container",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV041": [
+                "KHV041 - Exposed Port Forward",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV042": [
+                "KHV042 - Exposed Attaching To Container",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV043": [
+                "KHV043 - Cluster Health Disclosure",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV044": [
+                "KHV044 - Privileged Container",
+                "Minimize the use of privileged containers. Use Pod Security Policies to enforce using privileged: false policy."
+            ],
+            "KHV045": [
+                "KHV045 - Exposed System Logs",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV046": [
+                "KHV046 - Exposed Kubelet Cmdline",
+                "Disable --enable-debugging-handlers kubelet flag."
+            ],
+            "KHV047": [
+                "KHV047 - Pod With Mount To /var/log",
+                "Consider disallowing running as root: Using Kubernetes Pod Security Policies with MustRunAsNonRoot policy.",
+                "Consider disallowing writable host mounts to /var/log: Using Kubernetes Pod Security Policies with AllowedHostPaths policy."
+            ],
+            "KHV049": [
+                "KHV049 - kubectl proxy Exposed",
+                "Expose your applications in a permanent, legitimate way, such as via Ingress.",
+                "Close open proxies immediately after use."
+            ],
+            "KHV050": [
+                "KHV050 - Read access to Pod service account token",
+                "It is recommended to explicitly specify a Service Account for all of your workloads (serviceAccountName in Pod.Spec), and manage their permissions according to the least privilege principle.",
+                "Consider opting out automatic mounting of SA token using automountServiceAccountToken: false on ServiceAccount resource or Pod.spec."
+            ],
+            "Access to pod's secrets": [
+                "Access to pod's secrets",
+                "https://blog.aquasec.com/managing-kubernetes-secrets",
+                "Securing etcdsecret data is stored in etcd. By default, etcd data is not encrypted and neither are your secrets. You should enable encryption at rest, limit access to etcd to admin users only, and safely dispose of disks where etcd data was formerly stored",
+                "Use SSL/TLSwhen running etcd in a cluster, you must use secure peer-to-peer communication."
+            ],
+            "CAP_NET_RAW Enabled": [
+                "CAP_NET_RAW Enabled",
+                "CAP_NET_RAW is used to open a raw socket and is used by ping. If this is not required CAP_NET_RAW MUST be removed.",
+                "https://www.suse.com/c/demystifying-containers-part-iv-container-security/"
+            ]
+        },
+        "maturity":{
+        },
+        "core":{
+        }
+    },
+    "lynis_recs":{
+        "Performing test ID HRDN-7220 (Check if one or more compilers are installed)":[],
+        "Performing test ID AUTH-9328 (Default umask values)":[]
+    }
+}
